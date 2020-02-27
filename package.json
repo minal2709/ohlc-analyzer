@@ -1,0 +1,26 @@
+{
+  "name": "ohlc-analyzer",
+  "version": "1.0.0",
+  "description": "Create an Analytical Server \"OHLC\" (Open/High/Low/Close) time series based",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node node_modules/.bin/eslint --quiet ./. && echo Lint Passed.",
+    "test": "npm run lint && mocha",
+    "start": "node index.js"
+  },
+  "author": "Minal Jain",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "mocha": "^7.0.1"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "async": "^3.2.0",
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security"
+  }
+}
